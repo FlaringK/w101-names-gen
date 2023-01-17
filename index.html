@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>W101 Name generator</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div id="main">
+    <h2>Wizards 101 name generator</h2>
+    <div id="name">
+      <span id="first">Keira</span> <span id="last1">Gold</span><span id="last2">Breeze</span>
+    </div>
+    <div id="generator">
+      <h3>Generator Options</h3>
+      <div id="firstOptions">
+        <div class="opt"><label for="masc">Include Male First names</label> <input type="checkbox" name="masc" id="masc" checked></div>
+        <div class="opt"><label for="fem">Include Female First names</label> <input type="checkbox" name="fem" id="fem" checked></div>
+      </div>
+      <div id="genOptions">
+        <div class="opt"><label for="fname">Randomise First name</label> <input type="checkbox" name="fname" id="fname" checked></div>
+        <div class="opt"><label for="lname1">Randomise Left Last name</label> <input type="checkbox" name="lname1" id="lname1" checked></div>
+        <div class="opt"><label for="lname2">Randomise Right Last name</label> <input type="checkbox" name="lname2" id="lname2" checked></div>
+      </div>
+      <button onclick="generateName()">Generate Random name</button>
+    </div>
+    <div id="manual">
+      <h3>Manual Options</h3>
+      <div id="selectors">
+        <select name="selectfname" id="selectfname" onclick="updateFullName()">
+          <optgroup label="Androgenous" id="andgroup"></optgroup>
+          <optgroup label="Female" id="femgroup"></optgroup>
+          <optgroup label="Male" id="mascgroup"></optgroup>
+        </select>
+        <select name="selectlname1" id="selectlname1" onclick="updateFullName()"></select>
+        <select name="selectlname2" id="selectlname2" onclick="updateFullName()"></select>
+      </div>
+    </div>
+
+    <div class="borders">
+      <img src="./assets/w101c-wiki_headerL.png" id="headl">
+      <img src="./assets/w101c-wiki_headerR.png" id="headr">
+      <img src="./assets/w101c-wiki_footerL.png" id="footl">
+      <img src="./assets/w101c-wiki_footerR.png" id="footr">
+    </div>
+  </div>
+
+  <script src="/code.js"></script>
+
+</body>
+</html>

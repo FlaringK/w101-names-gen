@@ -1,0 +1,108 @@
+@font-face {
+  font-family: shremlock;
+  src: url(./assets/Shermlock.ttf);
+}
+
+body {
+  min-height: 98vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Comic Sans,Comic Sans MS,Verdana,Arial,Helvetica,sans-serif;
+
+  text-align: center;
+
+  background: url(./assets/w101-gh-bckrnd.jpg) no-repeat center top;
+  background-attachment: fixed;
+
+  --text-stroke-width: 2px;
+  --color-text-stroke: #000000;
+}
+
+h2, h3 {
+  color: #F57C0B;
+  font-weight: 400;
+  margin: 0.25em;
+  font-family: shremlock;
+  font-size: 30px;
+}
+
+#main {
+  background: url(./assets/w101c-wiki_cbg.png);
+  padding: 1em 3em;
+
+  position: relative;
+  border: 1px black solid;
+}
+
+#name {
+  color: yellow;
+  font-size: 75px;
+  font-family: shremlock;
+  
+  --text-stroke-width: 3px;
+}
+
+#generator, #manual {
+  background: url(./assets/bg3.jpg);
+  border: 1px solid #CD8F52;
+  padding: 0.5em;
+
+  z-index: 3;
+  position: relative;
+}
+
+#firstOptions .opt {
+  display: inline-block;
+}
+
+.opt {
+  padding: 0.1em;
+  width: max-content;
+  margin: auto;
+}
+
+button {
+  background: #0d950d;
+  color: #ebd136;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: inset 0px 3px 2px rgba(255, 255, 255, 0.7), inset 3px 0px 2px rgba(255, 255, 255, 0.2), inset -3px 0px 2px rgba(255, 255, 255, 0.2), inset 0px -3px 2px rgba(0, 0, 0, 0.7), inset 3px 0px 2px rgba(0, 0, 0, 0.2), inset -3px 0px 2px rgba(0, 0, 0, 0.2);
+  
+  font-family: shremlock;
+  font-size: 25px;
+}
+
+button:hover {
+  color: white;
+}
+
+button:active {
+  color: orange;
+}
+
+select {
+  background: #0d950d;
+  color: #ebd136;
+  font-family: inherit;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: inset 0px 3px 2px rgba(255, 255, 255, 0.7), inset 3px 0px 2px rgba(255, 255, 255, 0.2), inset -3px 0px 2px rgba(255, 255, 255, 0.2), inset 0px -3px 2px rgba(0, 0, 0, 0.7), inset 3px 0px 2px rgba(0, 0, 0, 0.2), inset -3px 0px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+
+  
+  --text-stroke-width: 1px;
+}
+
+h2, h3, button, #name, select {
+  text-shadow: calc(var(--text-stroke-width) * 1) calc(var(--text-stroke-width) * 0) 0 var(--color-text-stroke), calc(var(--text-stroke-width) * 0.9239) calc(var(--text-stroke-width) * 0.3827) 0 var(--color-text-stroke), calc(var(--text-stroke-width) * 0.7071) calc(var(--text-stroke-width) * 0.7071) 0 var(--color-text-stroke), calc(var(--text-stroke-width) * 0.3827) calc(var(--text-stroke-width) * 0.9239) 0 var(--color-text-stroke), calc(var(--text-stroke-width) * 0) calc(var(--text-stroke-width) * 1) 0 var(--color-text-stroke), calc(var(--text-stroke-width) * -0.3827) calc(var(--text-stroke-width) * 0.9239) 0 var(--color-text-stroke), calc(var(--text-stroke-width) * -0.7071) calc(var(--text-stroke-width) * 0.7071) 0 var(--color-text-stroke), calc(var(--text-stroke-width) * -0.9239) calc(var(--text-stroke-width) * 0.3827) 0 var(--color-text-stroke), calc(var(--text-stroke-width) * -1) calc(var(--text-stroke-width) * 0) 0 var(--color-text-stroke), calc(var(--text-stroke-width) * -0.9239) calc(var(--text-stroke-width) * -0.3827) 0 var(--color-text-stroke), calc(var(--text-stroke-width) * -0.7071) calc(var(--text-stroke-width) * -0.7071) 0 var(--color-text-stroke), calc(var(--text-stroke-width) * -0.3827) calc(var(--text-stroke-width) * -0.9239) 0 var(--color-text-stroke), calc(var(--text-stroke-width) * 0) calc(var(--text-stroke-width) * -1) 0 var(--color-text-stroke), calc(var(--text-stroke-width) * 0.3827) calc(var(--text-stroke-width) * -0.9239) 0 var(--color-text-stroke), calc(var(--text-stroke-width) * 0.7071) calc(var(--text-stroke-width) * -0.7071) 0 var(--color-text-stroke), calc(var(--text-stroke-width) * 0.9239) calc(var(--text-stroke-width) * -0.3827) 0 var(--color-text-stroke);
+}
+
+img { position: absolute; }
+
+#headl { top: -20px; left: -48px; }
+#headr { top: -20px; right: -48px; }
+#footl { bottom: -20px; left: -48px; }
+#footr { bottom: -20px; right: -48px; }
