@@ -511,3 +511,7 @@ let updateFullName = () => {
   document.getElementById("last1").innerText = document.getElementById("selectlname1").value
   document.getElementById("last2").innerText = document.getElementById("selectlname2").value
 }
+
+// On load gen random name
+
+generateName()

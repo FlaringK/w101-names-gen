@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>W101 Name generator</title>
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+  <meta content="W101 Name generator" property="og:title" />
+  <meta content="Generate your own wizard 101 name" property="og:description" />
+  <meta content="https://flaringk.github.io/w101-names-gen" property="og:url" />
+  <meta content="#CD8F52" data-react-helmet="true" name="theme-color" />
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +19,7 @@
     <div id="name">
       <span id="first">Keira</span> <span id="last1">Gold</span><span id="last2">Breeze</span>
     </div>
-    <div id="generator">
+    <div id="generator" class="optwrap">
       <h3>Generator Options</h3>
       <div id="firstOptions">
         <div class="opt"><label for="masc">Include Male First names</label> <input type="checkbox" name="masc" id="masc" checked></div>
@@ -26,7 +32,7 @@
       </div>
       <button onclick="generateName()">Generate Random name</button>
     </div>
-    <div id="manual">
+    <div id="manual" class="optwrap">
       <h3>Manual Options</h3>
       <div id="selectors">
         <select name="selectfname" id="selectfname" onclick="updateFullName()">
@@ -37,6 +43,9 @@
         <select name="selectlname1" id="selectlname1" onclick="updateFullName()"></select>
         <select name="selectlname2" id="selectlname2" onclick="updateFullName()"></select>
       </div>
+    </div>
+    <div class="optwrap">
+      Made by <a href="https://flaringk.github.io/">FlaringK</a>
     </div>
 
     <div class="borders">
